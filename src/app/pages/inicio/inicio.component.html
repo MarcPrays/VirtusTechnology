@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VirtusTechnology</title>
+</head>
+
+<body>
+  <app-navbar></app-navbar>
+  <header class="header">
+
+
+    <div class="header-content conteiner">
+      <div class="header-text">
+        <h1>LA MEJOR TIENDA DE COMPUTADORAS EN <br> <strong class="verde">SANTA CRUZ</strong></h1>
+        <p>
+          Virtux Tecnology es el destino preferido para los entusiastas de la tecnologia y profesionales del sector.
+          Ofrecemos computadoras de escritorio y Gamer de alto rendimiento.
+        </p>
+        <a class="btn-1" href="#">Explora nuestra tienda</a>
+      </div>
+      <div class="header-img">
+        <img loading="lazy"
+          src="https://daokcomputers.nl/wp-content/uploads/2020/07/pngkey.com-gaming-computer-png-2166883.png"
+          alt="PC-HEADER">
+      </div>
+    </div>
+  </header>
+  <section class="m-content conteiner">
+    <img loading="lazy" src="assets/logoMSI.png" alt="Logo MSI">
+    <img loading="lazy" src="assets/logoCorsair.png" alt="Logo Corsair">
+    <img loading="lazy" src="assets/logoLenovo.png" alt="Logo Lenovo">
+    <img loading="lazy" src="assets/logoHp.png" alt="Logo Hp">
+    <img loading="lazy" src="assets/logoAsus.png" alt="Logo ASUS">
+    <img loading="lazy" src="assets/logoSamsung.png" alt="Logo Samsung">
+  </section>
+  <main class="principal">
+    <div class="cards-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:0:3; let i=index">
+            <div class="card mb-4" style="width: 18rem;">
+              <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{producto.titulo}}</h5>
+                <p class="card-text">
+                  {{producto.mensaje}}
+                </p>
+                <button (click)="verProducto(i)" class="btn btn-primary">Ver más detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:3:6; let i=index">
+            <div class="card mb-4" style="width: 18rem;">
+              <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{producto.titulo}}</h5>
+                <p class="card-text">
+                  {{producto.mensaje}}
+                </p>
+                <button (click)="verProducto(i + 3)" class="btn btn-primary">Ver más detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:6:9; let i=index">
+            <div class="card mb-4" style="width: 18rem;">
+              <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{producto.titulo}}</h5>
+                <p class="card-text">
+                  {{producto.mensaje}}
+                </p>
+                <button (click)="verProducto(i + 6)" class="btn btn-primary">Ver más detalles</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="app">
+
+    <div class="app-content conteiner">
+
+      <div class="app-text">
+        <h2>CLIENTE FELIZ</h2>
+        <p>
+          Queremos expresar nuestro más sincero agradecimiento por haber elegido nuestra tienda para adquirir tu nuevo
+          PC. Es un honor para nosotros haberte asistido en esta importante inversión tecnológica y nos complace saber
+          que estás satisfecho con tu compra.
+          En Nombre de la Tienda, nos esforzamos por ofrecer productos de la más alta calidad y un servicio excepcional
+          a todos nuestros clientes, y saber que has quedado contento con tu experiencia nos llena de gratitud y
+          satisfacción.
+        </p>
+        <div class="app-dow">
+          <img loading="lazy" src="assets/Resena.png" alt="">
+        </div>
+      </div>
+      <div class="app-img">
+        <img loading="lazy" class="cliente" src="assets/clienteImg.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="video-1 conteiner">
+    <iframe class="video" src="https://www.youtube.com/embed/8xplt6_4v44?si=yEietccR7Sok0nQ8"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <app-footer></app-footer>
+</body>
+
+</html>

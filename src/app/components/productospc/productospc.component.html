@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Laptops</title>
+</head>
+<body>
+    <header>
+        <h1 class="tamaño">Tienda Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#/inicio">INICIO</a></li>
+                <li><a href="#/productosPc" class="active">PC-GAMER</a></li>
+                <li><a href="#/productosLaptop">LAPTOPS</a></li>
+                <li><a href="#/contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="productos">
+            <div class="cards-content">
+                <div class="container">
+                    <div class="row justify-content-center"> <!-- Justificar al centro -->
+                        <div class="col-md-3 mb-4" *ngFor="let producto of productosPc | slice:8:12; let i=index">
+                            <div class="card" style="width: 18rem;">
+                                <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{producto.nombre}}</h5>
+                                    <pre class="card-text">{{producto.caracteristicas}}</pre>
+                                    <button class="btn btn-primary mx-auto d-block">Ver más detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cards-content">
+                <div class="container">
+                    <div class="row justify-content-center"> <!-- Justificar al centro -->
+                        <div class="col-md-3 mb-4" *ngFor="let producto of productosPc | slice:12:16; let i=index">
+                            <div class="card" style="width: 18rem;">
+                                <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">{{producto.nombre}}</h5>
+                                    <pre class="card-text">{{producto.caracteristicas}}</pre>
+                                    <button class="btn btn-primary">Ver más detalles</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+          
+          
+      
+        </section>
+    </main>
+    <footer>
+        <p>Derechos Reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>

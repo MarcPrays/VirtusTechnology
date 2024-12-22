@@ -1,0 +1,35 @@
+.bg-fondo {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
+.bg-fondo a {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+
+.ml-auto {
+    margin-left: auto
+}
+
+.navbar-nav *:not(.espaciado) {
+    margin-right: 9px;
+}
+
+.espaciado {
+    margin-right:4.9rem;
+}
+
+.nav-item .nav-link {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-radius: 3px;
+    transition-property: background-color, color;
+    transition-duration: 0.5s;
+}
+
+.nav-item .nav-link:hover {
+    color: black;
+    background-color: white;
+}

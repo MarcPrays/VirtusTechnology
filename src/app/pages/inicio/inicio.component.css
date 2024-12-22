@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+ /* no tenia esto */
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../../../assets/fondoHeader.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /*88*/
+}
+
+
+.header-content {
+    display: flex;
+}
+
+.header-text {
+    width: 50%;
+    margin-right: 80px;
+    padding-top: 131px;
+
+}
+
+.header-text h1 {
+    color: white;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 35px;
+}
+
+.verde {
+    color: rgb(47, 202, 47);
+}
+
+.header-text p {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 45px;
+    font-family: sans-serif;
+    line-height: 1.3;
+    font-weight: 100;
+    letter-spacing: 1.1px;
+    text-align: justify;
+}
+
+.header-img {
+    width: 50%;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 13px 35px;
+    color: white;
+    background-color: rgb(47, 202, 47);
+    border-radius: 35px;
+    border: 2px solid rgb(47, 202, 47);
+    transition-property: background-color, color;
+    transition-duration: 1s;
+}
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.m-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+}
+
+.m-content img {
+    width: 150px;
+}
+
+.principal {
+    padding: 40px 0px 60px 0px;
+    background-color: transparent;
+}
+
+.cards-content {
+    margin-left: 150px;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.664);
+    border-radius: 15px;
+    border: 2px solid black;
+    box-shadow: 2px 1px 8px 1px black;
+}
+
+.separacion {
+    margin-top: 47px;
+}
+
+.card-body {
+    padding: 35px 35px 0px 35px;
+}
+
+.card-body .card-text {
+    margin-top: 15px;
+}
+
+.card-body button {
+    margin: 12px 0;
+    padding: 6px;
+}
+
+
+.card-img-top {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho del card */
+     height: 200px; /* Ajusta la altura deseada */
+    object-fit: contain; /* Recorta la imagen para que llene el cuadro sin distorsionarse */
+}
+
+
+.app {
+    background-color: rgba(17, 16, 13, 0.918);
+}
+
+.app-content {
+    display: flex;
+    padding: 100px 0;
+}
+
+.app-text {
+    width: 50%;
+}
+
+.app-text h2 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 35px;
+}
+
+.app-text p {
+    color: white;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+.app-dow {
+    display: flex;
+}
+
+.app-dow img {
+    width: 180px;
+}
+
+.app-img {
+    text-align: center;
+    width: 50%;
+}
+
+.cliente {
+    width: 90%;
+}
+
+.video-1 {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.video {
+    width: 700px;
+}
+
+
+
+
+@media (max-width:991px) {
+
+
+    .header {
+        min-height: 0vh;
+    }
+
+    .header-content {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .header-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .header-img {
+        width: 100%;
+    }
+
+    .m-content {
+        display: none;
+    }
+
+    .app-content {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .app-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .app-text h2 {
+        margin-bottom: 15px;
+    }
+
+    .app-dow {
+        justify-content: center;
+    }
+
+    .app-img {
+        width: 100%;
+    }
+
+    .video-1 {
+        padding: 30px;
+    }
+
+    .video {
+        width: 100%;
+    }
+}

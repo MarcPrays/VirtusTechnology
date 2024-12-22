@@ -1,0 +1,28 @@
+.footer-style {
+    padding-top: 50px;
+    background-color: rgb(41, 38, 38);
+    color: white;
+}
+
+.list {
+    list-style-type: none; /* Elimina las viñetas predeterminadas */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+
+
+.list li {
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+li a {
+    color:cyan;
+    text-decoration: none;
+}
+
+.list li:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo más claro al pasar el mouse */
+}
