@@ -39,8 +39,8 @@
   <main class="principal">
     <div class="cards-content">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:0:3; let i=index">
+        <div class="row justify-content-center">
+          <div class="col-auto mx-4" *ngFor="let producto of productosInicio | slice:0:3; let i=index">
             <div class="card mb-4" style="width: 18rem;">
               <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
               <div class="card-body">
@@ -55,9 +55,10 @@
         </div>
       </div>
 
+
       <div class="container">
-        <div class="row">
-          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:3:6; let i=index">
+        <div class="row justify-content-center">
+          <div class="col-auto mx-4" *ngFor="let producto of productosInicio | slice:3:6; let i=index">
             <div class="card mb-4" style="width: 18rem;">
               <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
               <div class="card-body">
@@ -73,8 +74,8 @@
       </div>
 
       <div class="container">
-        <div class="row">
-          <div class="col-md-4" *ngFor="let producto of productosInicio | slice:6:9; let i=index">
+        <div class="row justify-content-center">
+          <div class="col-auto mx-4" *ngFor="let producto of productosInicio | slice:6:9; let i=index">
             <div class="card mb-4" style="width: 18rem;">
               <img loading="lazy" class="card-img-top" [src]="producto.img" alt="Card image cap">
               <div class="card-body">
