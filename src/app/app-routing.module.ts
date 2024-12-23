@@ -6,6 +6,7 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
 import { ProductospcComponent } from './components/productospc/productospc.component';
 import { ProductoslaptopComponent } from './components/productoslaptop/productoslaptop.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { OfertasDescuentosComponent } from './pages/ofertas-descuentos/ofertas-descuentos.component';
 
 const routes: Routes = [
   {path: 'inicio', component: InicioComponent},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'productosPc', component: ProductospcComponent},
   {path: 'productosLaptop', component: ProductoslaptopComponent},
   {path: 'contacto', component: ContactoComponent},
+  {path: 'ofertas', component: OfertasDescuentosComponent},
   
   {path: 'sobreNosotros', component: SobreNosotrosComponent},
   

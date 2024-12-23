@@ -13,11 +13,22 @@
     width: 25rem;
 }
 
+.product-description {
+    font-family: "Poppins";
+    font-size: 16px;
+    text-align: justify;
+}
 
 .product-data {
     font-weight: bold;
 }
 
 .style-data {
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.precio-producto {
+    font-weight: bold;
+    font-size: 25px;
 }

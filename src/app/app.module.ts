@@ -11,6 +11,9 @@ import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotr
 import { ProductospcComponent } from './components/productospc/productospc.component';
 import { ProductoslaptopComponent } from './components/productoslaptop/productoslaptop.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { OfertasDescuentosComponent } from './pages/ofertas-descuentos/ofertas-descuentos.component';
+
+import { ReactiveFormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [
@@ -22,11 +25,13 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     SobreNosotrosComponent,
     ProductospcComponent,
     ProductoslaptopComponent,
-    ContactoComponent
+    ContactoComponent,
+    OfertasDescuentosComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
